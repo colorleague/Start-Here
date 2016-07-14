@@ -1,3 +1,7 @@
-h1 {
-	float: left;	
-}
+@import 'normal.scss';
+@import 'reset.scss';
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'animation.scss';
+@import 'structure.scss';
+@import 'responsive.scss';

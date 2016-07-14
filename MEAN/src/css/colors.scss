@@ -1,0 +1,75 @@
+$primary: #ffffff;
+$secondary: #ffffff;
+$yellow: #fcd829;
+$white: #f9f9f9;
+$offwhite: #f4f4f4;
+
+/* Window Sizes */
+$windowFullWidth: 100vw;
+$windowFullHeight: 100vw;
+
+$windowThreeQuartersWidth: 75vw;
+$windowThreeQuartersHeight: 75vh;
+
+/* Wrapper Sizes */
+$wrapperOneQuartersWidth: 25%;
+$wrapperOneQuartersHeight: 25%;
+
+$wrapperThreeQuartersWidth: 75%;
+$wrapperThreeQuartersHeight: 75%;
+
+
+
+@mixin perfectPositionCenter {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+}
+
+@mixin perfectPositionTop {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: auto;
+	margin: auto;
+}
+
+
+@mixin perfectPositionBottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: auto;
+	margin: auto;
+}
+
+body {
+	background: $yellow;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+	position: relative;
+}
+
+.boxShadow {
+	box-shadow: 0vh 1vh 1vh 0vh rgba(0, 0, 0, 0.25);
+}
+
+.standInImac {
+	background: #fff;
+	border-radius: 2vh 2vh 0vh 0vh; border: 1px solid #ccc;
+	@include perfectPositionBottom;
+	width: $windowThreeQuartersWidth;
+	height: $windowThreeQuartersHeight;
+}
+
+.standInLogo {
+	width: $wrapperOneQuartersWidth;
+	height: $wrapperOneQuartersHeight;
+	@include perfectPositionCenter;
+}
