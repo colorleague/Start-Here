@@ -1,0 +1,120 @@
+/* popup */
+.popup, {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: -112.5vh;
+  z-index: 99;
+
+  .wrapper:hover h1.number  {
+
+  }
+
+  .bannerTitle {
+    top: 0;
+    bottom: auto;
+
+  }
+
+  .bannerTitle {
+    position: relative;
+  }
+
+  .gradientTopOut {
+    top: -12.5vh;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcd829+0,fcd829+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(252,216,41,0) 0%, rgba(252,216,41,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,216,41,0) 0%,rgba(252,216,41,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,216,41,0) 0%,rgba(252,216,41,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcd829', endColorstr='#fcd829',GradientType=0 ); /* IE6-9 */
+
+  }
+}
+
+.iconTitle::before{
+  content: "this is h1";
+  /* position: absolute; */
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 5vh;
+  height: 5vh;
+  z-index: 1;
+  float: left;
+  margin: 0 1vh 0 0;
+  border: 2px solid #ff5c5c;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  box-sizing: border-box;
+}
+
+.popup.active {
+  bottom: 0vh;
+}
+
+.popupCard {
+  width: 37.5vw;
+  height: 50vh;
+  border-radius: 1vh;
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  z-index: 0;
+  box-shadow: 0 0 1.25em 0 rgba(0,0,0,.2);
+}
+
+h1.number {
+  line-height: 25vh;
+  text-shadow: 0 40px 80px rgba(0,0,0,.5);
+}
+
+h1.number {
+  @include perfectPositionCenter;
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0.025);
+  font-size: 18.75vh;
+  line-height: 18.75vh;
+  height: 18.75vh;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: Arvo;
+  z-index: 0;
+}
+
+h2.overNumber {
+  @include perfectPositionTop;
+  text-shadow: none;
+  color: #fff;
+  font-size: 1.5875vh;
+  line-height: 6.25vh;
+  height: 6.25vh;
+  min-height: 6.25vh;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arvo;
+  z-index: 0;
+  text-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+}
+
+h3.overNumber {
+  @include perfectPositionCenter;
+  text-shadow: none;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 3.175vh;
+  line-height: 3.175vh;
+  height: 3.175vh;
+  min-height: 6.25vh;
+  max-width: 75%;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arvo;
+  z-index: 0;
+  text-shadow: 0 40px 80px rgba(0, 0, 0, 0.375);
+}
